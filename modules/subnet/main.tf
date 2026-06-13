@@ -1,0 +1,11 @@
+resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
+  name          = "test-subnetwork"
+  ip_cidr_range = "10.2.0.0/16"
+  region        = "europe-west1"
+  project       = var.project_id
+  network       = var.vpc_self_link
+  secondary_ip_range {
+    range_name    = "tf-test-secondary-range-update1"
+    ip_cidr_range = "192.168.10.0/24"
+  }
+}

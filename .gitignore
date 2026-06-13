@@ -1,0 +1,40 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude all tfvars (often contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Terraform plan files
+*.tfplan
+plan.out
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file
+# Uncomment if you DON'T want to commit it
+# .terraform.lock.hcl
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
