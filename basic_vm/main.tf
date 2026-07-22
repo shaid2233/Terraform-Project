@@ -12,7 +12,9 @@ module "vpc" {
 }
 
 module "subnet" {
-    source = "../modules/subnet/"
+    source = "../modules/subnet"
     vpc_self_link = module.vpc.vpc_self_link
     project_id = var.project_id
+    
+
 }
